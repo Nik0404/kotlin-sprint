@@ -2,12 +2,13 @@ package lesson_1
 
 fun main() {
     val messageShop: String = "спасибо"
-    var count: Int = 0
+    val countOfOrders: Int = 75
     var persons = 2000
 
-    println("$messageShop $count")
+    println(messageShop)
+    println(countOfOrders)
 //    println(persons)
-    persons = persons - 1
+    persons -= 1
 
     println(persons)
 }
