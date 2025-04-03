@@ -1,5 +1,5 @@
 package lesson_2
-
+//pull requests
 fun main() {
     val permanentEmployees = 50
     val zpPermanentEmployees = 30000.0
