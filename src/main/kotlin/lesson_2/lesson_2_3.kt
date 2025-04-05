@@ -15,5 +15,6 @@ fun main() {
     sHour = newMin / 60
     sMin = newMin - sHour * 60
 
-    println("$sHour:$sMin")
+    val result = String.format("%02d:%02d", sHour, sMin)
+    println(result)
 }
