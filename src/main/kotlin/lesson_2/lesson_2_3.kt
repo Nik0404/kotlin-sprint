@@ -1,20 +1,18 @@
 package lesson_2
 
+const val SIXTY = 60
+
 fun main() {
     var hour = 9
     var minutes = 39
-    val fullTime = 457
+    val travelTime = 457
 
-    var sHour = fullTime / 60
-    var sMin = fullTime - sHour * 60
+    val departureMin = (hour * SIXTY) + minutes
+    val fullTime = departureMin + travelTime
 
-    hour += sHour
-    minutes += sMin
+    val sHour = fullTime / SIXTY
+    val sMin = fullTime - sHour * SIXTY
 
-    val newMin = hour * 60 + minutes
-    sHour = newMin / 60
-    sMin = newMin - sHour * 60
-
-    val result = String.format("%02d:%02d", sHour, sMin)
+    val result = String.format("%02d:%02d", sHour, sMin) //17:16
     println(result)
 }
