@@ -4,10 +4,14 @@ const val AIR = 20
 const val SEASON = "зима"
 
 fun main() {
-    val weather = true
-    val awing = true
-    val air = 20
+    val isWeatherSunny = true
+    val isAwningOpen = true
+    val airHumidity = 20
     val season = "зима"
 
-    print("Благоприятные ли условия сейчас для роста бобовых? ${weather && awing && air == AIR && season != SEASON}")
+    print(
+        "Благоприятные ли условия сейчас для роста бобовых? ${
+            (isWeatherSunny == true) && (isAwningOpen == true) && airHumidity == AIR && season != SEASON
+        }"
+    )
 }
