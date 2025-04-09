@@ -2,14 +2,13 @@ package lesson_4
 
 fun main() {
     val day = 5
-    val firstGroup = (day % 2 != 0)
-    val secondGroup = (day % 2 == 0)
+    val isEven = (day % 2 == 0)
 
     val result = """
-        Упражнения для рук:    ${firstGroup}
-        Упражнения для ног:    ${secondGroup}
-        Упражнения для спины:  ${secondGroup}
-        Упражнения для пресса: ${firstGroup}
+        Упражнения для рук:    ${!isEven}
+        Упражнения для ног:    ${isEven}
+        Упражнения для спины:  ${isEven}
+        Упражнения для пресса: ${!isEven}
     """.trimIndent()
 
     print(result)
