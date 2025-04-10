@@ -3,7 +3,9 @@ package lesson_5
 const val RESULT = 11
 
 fun main() {
-    println("для входа в приложения нужно решить математический пример 1 + 10")
+    val deffNumberA = 1
+    val deffNumberB = 10
+    println("для входа в приложения нужно решить математический пример $deffNumberA + $deffNumberB")
 
     print("введите 1 число: ")
     val numberA = readln().toInt()
