@@ -11,8 +11,12 @@ fun main() {
     val numberTwo = readln().toInt()
 
     val result =
-        if (numberOne == winningNumberOne && numberTwo == winningNumberTwo) "Поздравляем! Вы выиграли главный приз!"
-        else if (numberOne == winningNumberOne || numberTwo == winningNumberTwo) "Вы выиграли утешительный приз!"
+        if (numberOne == winningNumberOne && numberTwo == winningNumberTwo ||
+            numberOne == winningNumberTwo && numberTwo == winningNumberOne
+        ) "Поздравляем! Вы выиграли главный приз!"
+        else if (numberOne == winningNumberOne || numberTwo == winningNumberTwo ||
+            numberOne == winningNumberTwo || numberTwo == winningNumberOne
+        ) "Вы выиграли утешительный приз!"
         else "Неудача!"
 
     println(result)
