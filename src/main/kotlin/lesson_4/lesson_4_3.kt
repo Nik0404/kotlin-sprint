@@ -2,6 +2,8 @@ package lesson_4
 
 const val AIR = 20
 const val SEASON = "зима"
+const val IS_WEATHER_SUNNY = true
+const val IS_AWNING_OPEN = true
 
 fun main() {
     val isWeatherSunny = true
@@ -11,7 +13,7 @@ fun main() {
 
     print(
         "Благоприятные ли условия сейчас для роста бобовых? ${
-            (isWeatherSunny == true) && (isAwningOpen == true) && airHumidity == AIR && season != SEASON
+            (isWeatherSunny == IS_WEATHER_SUNNY) && (isAwningOpen == IS_AWNING_OPEN) && airHumidity == AIR && season != SEASON
         }"
     )
 }
